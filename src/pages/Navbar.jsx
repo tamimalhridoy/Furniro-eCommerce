@@ -7,14 +7,16 @@ const Navbar = () => {
     <nav className="py-8">
       <div className="container flex items-center justify-between">
         <div className="logo">
-          <img src="/logo.png" alt="" />
+          <Link to="/">
+            <img src="/logo.png" alt="" />
+          </Link>
         </div>
         <ul className="flex text-lg font-primary font-medium gap-11">
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">Shop</Link>
+            <Link to="/Shop">Shop</Link>
           </li>
           <li>
             <Link to="/">About</Link>
