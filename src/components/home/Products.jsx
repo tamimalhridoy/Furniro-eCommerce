@@ -1,5 +1,6 @@
 import React from "react";
 import ProductsLiat from "../ProductsLiat";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   return (
@@ -17,6 +18,14 @@ const Products = () => {
           <ProductsLiat />
           <ProductsLiat />
           <ProductsLiat />
+        </div>
+        <div className="flex justify-center pt-8">
+          <Link
+            className="font-primary text-base font-semibold text-[#B88E2F] py-3 px-[72px] border border-[#B88E2F] "
+            to="/Shop"
+          >
+            Show More
+          </Link>
         </div>
       </div>
     </section>
