@@ -4,7 +4,6 @@ import { FaArrowRight } from "react-icons/fa6";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import NextArrow from "../NextArrow";
-import "slick-carousel/slick/slick-theme.css";
 
 const Explore = () => {
   var settings = {
@@ -14,7 +13,7 @@ const Explore = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
-    
+    prevArrow: <div></div>,
   };
   return (
     <section className="bg-[#FCF8F3] py-11 mt-16">
@@ -75,7 +74,6 @@ const Explore = () => {
                 </div>
               </div>
             </div>
-           
           </Slider>
         </div>
       </div>
