@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .explore .slick-active .slide_items {
-  @apply h-[486px];
+  @apply h-[486px] px-3;
 }
 .explore .slick-active.slick-current .slide_items {
   @apply h-[582px];
@@ -12,8 +12,8 @@
   display: flex !important;
   @apply gap-5;
 }
-.explore .slick-dots  {
-  @apply absolute left-1/2 bottom-8
+.explore .slick-dots {
+  @apply absolute left-1/2 bottom-8;
 }
 .explore .slick-dots li button {
   @apply text-[0px] w-3 h-3 rounded-full bg-[#D8D8D8];
