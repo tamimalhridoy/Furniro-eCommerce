@@ -58,7 +58,7 @@ const Explore = () => {
                 <div className="absolute bottom-6 left-6">
                   <div className="py-8 pl-8 pr-5 bg-[#FFFFFF] inline-block relative ">
                     <p className="flex items-center gap-2 font-primary font-medium text-base text-[#616161]">
-                      <span>01</span>
+                      <span>02</span>
                       <span>
                         <img src="/border.png" className="w-full" alt="" />
                       </span>
@@ -76,11 +76,11 @@ const Explore = () => {
             </div>
             <div>
               <div className="relative slide_items">
-                <img src="/slick-1.png" className="w-full h-full" alt="" />
+                <img src="/slick-3.png" className="w-full h-full" alt="" />
                 <div className="absolute bottom-6 left-6">
                   <div className="py-8 pl-8 pr-5 bg-[#FFFFFF] inline-block relative ">
                     <p className="flex items-center gap-2 font-primary font-medium text-base text-[#616161]">
-                      <span>01</span>
+                      <span>03</span>
                       <span>
                         <img src="/border.png" className="w-full" alt="" />
                       </span>
