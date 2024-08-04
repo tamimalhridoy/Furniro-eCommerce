@@ -4,11 +4,11 @@ import { FaUser, FaSearch, FaRegHeart, FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="py-8">
+    <nav className="nav py-8">
       <div className="container flex items-center justify-between">
         <div className="logo">
           <Link to="/">
-            <img src="/logo.png" alt="" />
+            <img src="/logo.png" className="w-full" alt="" />
           </Link>
         </div>
         <ul className="flex text-lg font-primary font-medium gap-11">
@@ -19,10 +19,10 @@ const Navbar = () => {
             <Link to="/Shop">Shop</Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         <div className="icon">
