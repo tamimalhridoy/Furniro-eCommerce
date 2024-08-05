@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const Banner = () => {
   return (
-    <section className=" py-[150px] bg-[url('/banner.png')]">
+    <section className="py-[150px] bg-[url('/banner.png')]">
       <div className="container">
         <div className="bg-[#FFF3E3] w-1/2 ml-auto py-[62px]  px-11">
           <h2 className="font-primary text-base font-semibold text-[#333333]">
