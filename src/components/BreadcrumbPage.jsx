@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa6";
 
 const BreadcrumbPage = () => {
   const location = useLocation();
-  console.log(location.pathname)
+  const path = location.pathname.split("/").filter((item) => item !== "");
   return (
     <ul className=" flex text-center items-center gap-1 justify-center mt-2">
       <li className="font-primary font-medium text-base text-[#]">
@@ -12,7 +12,7 @@ const BreadcrumbPage = () => {
       </li>
       <FaChevronRight />
       <li className="font-primary font-medium text-base text-[#000000e4]">
-        <p>Shop</p>
+        <p>{path}</p>
       </li>
     </ul>
   );
