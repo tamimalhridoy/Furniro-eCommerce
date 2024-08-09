@@ -1,7 +1,11 @@
 import React from "react";
 
 const Filter = () => {
-  return <div></div>;
+  return (
+    <section className="py-10 bg-[#F9F1E7]">
+      <div className="container"></div>
+    </section>
+  );
 };
 
 export default Filter;
