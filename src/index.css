@@ -54,3 +54,12 @@
 .setup img:nth-child(9) {
   grid-area: 6 / 10 / 8 / 12;
 }
+.Pagination li a {
+  @apply px-6 py-4 bg-[#F9F1E7] rounded-xl font-primary text-xl;
+}
+.Pagination .selected a {
+  @apply bg-brand text-white font-primary text-xl;
+}
+.Pagination .previous {
+  @apply hidden;
+}

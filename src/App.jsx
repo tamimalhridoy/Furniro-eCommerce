@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import Payment from "./pages/Payment";
 import Returns from "./pages/Returns";
 import Policies from "./pages/Policies";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   const router = createBrowserRouter(
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}></Route>
+          <Route path="*" element={<ErrorPage/>}></Route>
           <Route path="/shop" element={<Shop />}></Route>
           <Route path="/Share" element={<Share />}></Route>
           <Route path="/Compare" element={<Compare />}></Route>
@@ -33,6 +35,7 @@ function App() {
           <Route path="/payment" element={<Payment />}></Route>
           <Route path="/returns" element={<Returns />}></Route>
           <Route path="/policies" element={<Policies />}></Route>
+          
         </Route>
       </Route>
     )
