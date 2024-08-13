@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaUser, FaSearch, FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import CartSidebar from "../CartSidebar/CartSidebar";
 
 const Navbar = () => {
+  const [siteCart, setShowSiteCart] = useState(false);
+  const hendelsitebar = (result) => {
+    setShowSiteCart(result);
+  };
+
   return (
     <>
       <nav className="nav py-8">
@@ -44,14 +49,14 @@ const Navbar = () => {
                   <FaRegHeart />
                 </Link>
               </li>
-              <li>
-                <FaShoppingCart />
+              <li onClick={() => setShowSiteCart(true)}>
+                <FaShoppingCart className="cursor-pointer" />
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <CartSidebar/>
+      {siteCart && <CartSidebar hendelsitebar={hendelsitebar} />}
     </>
   );
 };
