@@ -1,6 +1,7 @@
 import React from "react";
 import { CgCloseR } from "react-icons/cg";
 import CartSidebarItem from "./CartSidebarItem";
+import { Link } from "react-router-dom";
 
 const CartSidebar = ({ hendelsitebar }) => {
   return (
@@ -31,7 +32,7 @@ const CartSidebar = ({ hendelsitebar }) => {
         </div>
         <div className="flex justify-center gap-4 py-6">
           <button className="font-primary text-[12px] px-7 py-2 border-2 border-black rounded-2xl">
-            Cart
+            <Link to="/cart">Cart</Link>
           </button>
           <button className="font-primary text-[12px] px-7 py-2 border-2 border-black rounded-2xl">
             Checkout
