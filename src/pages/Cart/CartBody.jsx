@@ -20,6 +20,13 @@ const CartBody = () => {
             </ul>
           </div>
           <CartProductItems />
+          <CartProductItems />
+          <CartProductItems />
+          <CartProductItems />
+          <CartProductItems />
+          <CartProductItems />
+          <CartProductItems />
+          <CartProductItems />
         </div>
         <div className="checkout w-2/5">
           <CartCheckout />
