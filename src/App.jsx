@@ -18,6 +18,7 @@ import Returns from "./pages/Returns";
 import Policies from "./pages/Policies";
 import ErrorPage from "./components/ErrorPage";
 import CartPage from "./pages/Cart/CartPage";
+import SingleProduct from "./pages/Asgaard/SingleProduct";
 
 function App() {
   const router = createBrowserRouter(
@@ -29,6 +30,7 @@ function App() {
           <Route path="*" element={<ErrorPage />}></Route>
           <Route path="/shop" element={<Shop />}></Route>
           <Route path="/cart" element={<CartPage />}></Route>
+          <Route path="/singleProduct/*" element={<SingleProduct />}></Route>
           <Route path="/Share" element={<Share />}></Route>
           <Route path="/Compare" element={<Compare />}></Route>
           <Route path="/Like" element={<Like />}></Route>
