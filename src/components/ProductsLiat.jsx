@@ -9,7 +9,7 @@ const ProductsLiat = () => {
     <div className=" cursor-pointer">
       <div className="relative group">
         <img className="w-full" src="/image 4.png" alt="" />
-        <Link to="/singleProduct">
+        <Link to="/shop/singleProduct">
           <div className="absolute top-0 left-0 bg-[rgba(58,58,58,0.58)] h-full w-full flex flex-col items-center justify-center scale-0 group-hover:scale-100 transition-all">
             <button>
               <Link className="font-primary text-brand bg-white py-3 px-14 font-semibold text-base rounded-lg">
