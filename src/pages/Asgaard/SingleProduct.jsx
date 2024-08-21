@@ -1,5 +1,6 @@
 import React from "react";
 import BreadcrumbPage from "../../components/BreadcrumbPage";
+import ProductDetails from "../../components/ProductDts/ProductDetails";
 
 const SingleProduct = () => {
   return (
@@ -8,6 +9,7 @@ const SingleProduct = () => {
         <div className="container">
           <BreadcrumbPage />
         </div>
+        <ProductDetails/>
       </div>
     </section>
   );
