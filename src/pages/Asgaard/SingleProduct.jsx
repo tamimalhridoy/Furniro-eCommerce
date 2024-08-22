@@ -9,8 +9,8 @@ const SingleProduct = () => {
         <div className="container">
           <BreadcrumbPage />
         </div>
-        <ProductDetails/>
       </div>
+      <ProductDetails />
     </section>
   );
 };
