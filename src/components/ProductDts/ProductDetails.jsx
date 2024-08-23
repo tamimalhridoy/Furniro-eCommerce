@@ -12,7 +12,8 @@ const API = {
 
 const ProductDetails = () => {
   const [size, setSize] = useState("");
-  console.log(size);
+  const [color, setColor] = useState("");
+  console.log(color);
   const settings = {
     direction: "horizontal", // or "vertical"
     zoom: true, // or false
@@ -105,6 +106,48 @@ const ProductDetails = () => {
                 name="Size"
                 onChange={(e) => setSize(e.target.value)}
                 className=" hidden"
+              />
+            </label>
+          </div>
+          <h3 className="font-primary text-sm text-[#9F9F9F] mt-6 mb-1">
+            Color
+          </h3>
+          <div className="flex gap-4">
+            <label
+              htmlFor="violet"
+              className="w-8 h-8 rounded-full"
+              style={{ background: "#816DFA" }}
+            >
+              <input
+                type="radio"
+                id="violet"
+                name="Color"
+                onChange={(e) => setColor(e.target.value)}
+              />
+            </label>
+            <label
+              htmlFor="black"
+              className="w-8 h-8 rounded-full"
+              style={{ background: "black" }}
+            >
+              <input
+                type="radio"
+                id="black"
+                name="Color"
+                onChange={(e) => setColor(e.target.value)}
+              />
+            </label>
+            <label
+              htmlFor="orange"
+              className="w-8 h-8 rounded-full"
+              style={{ background: "#B88E2F" }}
+            >
+              <input
+                type="radio"
+                id="orange"
+                value="orange  "
+                name="Color"
+                onChange={(e) => setColor(e.target.value)}
               />
             </label>
           </div>
