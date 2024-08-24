@@ -121,8 +121,10 @@ const ProductDetails = () => {
               <input
                 type="radio"
                 id="violet"
+                value="violet"
                 name="Color"
                 onChange={(e) => setColor(e.target.value)}
+                className="hidden"
               />
             </label>
             <label
@@ -133,7 +135,9 @@ const ProductDetails = () => {
               <input
                 type="radio"
                 id="black"
+                value="black"
                 name="Color"
+                className="hidden"
                 onChange={(e) => setColor(e.target.value)}
               />
             </label>
@@ -145,11 +149,17 @@ const ProductDetails = () => {
               <input
                 type="radio"
                 id="orange"
-                value="orange  "
+                value="orange"
                 name="Color"
                 onChange={(e) => setColor(e.target.value)}
+                className="hidden"
               />
             </label>
+          </div>
+          <div className="flex font-primary font-medium text-base py-5 px-3 border-2 border-[#9F9F9F] w-fit rounded-lg gap-9 mt-8">
+            <button>-</button>
+            <p>1</p>
+            <button>+</button>
           </div>
         </div>
       </div>
