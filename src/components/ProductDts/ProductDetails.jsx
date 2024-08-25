@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProductSlide from "product-slide";
 import { IoIosStar } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const API = {
   images: [
@@ -13,9 +14,10 @@ const API = {
 const ProductDetails = () => {
   const [size, setSize] = useState("");
   const [color, setColor] = useState("");
-  console.log(color);
+  const [number, setNumber] = useState(1);
+
   const settings = {
-    direction: "horizontal", // or "vertical"
+    direction: "vertical", // or "horizontal"
     zoom: true, // or false
   };
   return (
@@ -156,10 +158,82 @@ const ProductDetails = () => {
               />
             </label>
           </div>
-          <div className="flex font-primary font-medium text-base py-5 px-3 border-2 border-[#9F9F9F] w-fit rounded-lg gap-9 mt-8">
-            <button>-</button>
-            <p>1</p>
-            <button>+</button>
+          <div className="flex items-center mt-8 gap-3 pb-[60px] border-b border-brand">
+            <div className="flex font-primary font-medium text-base py-5 px-3 border-2 border-[#9F9F9F] w-fit rounded-lg gap-9 ">
+              <button
+                onClick={() => {
+                  number > 1 && setNumber(number - 1);
+                }}
+                className="cursor-pointer"
+              >
+                -
+              </button>
+              <p>{number}</p>
+              <button
+                onClick={() => setNumber(number + 1)}
+                className="cursor-pointer"
+              >
+                +
+              </button>
+            </div>
+            <button className=" py-5 px-12 border-2 border-black font-primary font-normal text-xl rounded-lg">
+              Add To Cart
+            </button>
+            <p className=" py-5 px-12 border-2 border-black font-primary font-normal text-xl rounded-lg">
+              + Compare
+            </p>
+          </div>
+          <div>
+            <p>
+              <span className="font-primary text-base text-[#9F9F9F]">SKU</span>
+              <span className="font-primary text-base text-[#9F9F9F] pl-[60px] pr-3">
+                :
+              </span>
+              <span className="font-primary text-base text-[#9F9F9F]">
+                SS001
+              </span>
+            </p>
+            <p>
+              <span className="font-primary text-base text-[#9F9F9F]">
+                Category
+              </span>
+              <span className="font-primary text-base text-[#9F9F9F] pl-[16px] pr-3">
+                :
+              </span>
+              <span className="font-primary text-base text-[#9F9F9F]">
+                Sofas
+              </span>
+            </p>
+            <p>
+              <span className="font-primary text-base text-[#9F9F9F]">
+                Tags
+              </span>
+              <span className="font-primary text-base text-[#9F9F9F] pl-[52px] pr-3">
+                :
+              </span>
+              <span className="font-primary text-base text-[#9F9F9F]">
+                Sofa, Chair, Home, Shop
+              </span>
+            </p>
+            <p>
+              <span className="font-primary text-base text-[#9F9F9F]">
+                Share
+              </span>
+              <span className="font-primary text-base text-[#9F9F9F] pl-[44px] pr-3">
+                :
+              </span>
+              <ul>
+                <li>
+                  <Link></Link>
+                </li>
+                <li>
+                  <Link></Link>
+                </li>
+                <li>
+                  <Link></Link>
+                </li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
