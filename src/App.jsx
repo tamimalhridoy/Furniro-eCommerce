@@ -30,7 +30,10 @@ function App() {
           <Route path="*" element={<ErrorPage />}></Route>
           <Route path="/shop" element={<Shop />}></Route>
           <Route path="/cart" element={<CartPage />}></Route>
-          <Route path="/shop/singleProduct/*" element={<SingleProduct />}></Route>
+          <Route
+            path="/shop/singleProduct/*"
+            element={<SingleProduct />}
+          ></Route>
           <Route path="/Share" element={<Share />}></Route>
           <Route path="/Compare" element={<Compare />}></Route>
           <Route path="/Like" element={<Like />}></Route>
