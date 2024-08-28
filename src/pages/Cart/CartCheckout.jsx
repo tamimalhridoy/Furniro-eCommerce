@@ -22,7 +22,7 @@ const CartCheckout = () => {
           </p>
         </div>
         <button className="font-primary text-xl px-12 py-4 border-2 border-black rounded-2xl mt-10 ">
-          <Link>Check Out</Link>
+          <Link to="/checkout">Check Out</Link>
         </button>
       </div>
     </div>

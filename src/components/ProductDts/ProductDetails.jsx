@@ -6,6 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import DarItems from "./DarItems";
+import RelatedProducts from "./RelatedProducts";
 
 const API = {
   images: [
@@ -253,6 +254,7 @@ const ProductDetails = () => {
         </div>
       </div>
       <DarItems />
+      <RelatedProducts />
     </section>
   );
 };

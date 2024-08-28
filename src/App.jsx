@@ -19,6 +19,7 @@ import Policies from "./pages/Policies";
 import ErrorPage from "./components/ErrorPage";
 import CartPage from "./pages/Cart/CartPage";
 import SingleProduct from "./pages/Asgaard/SingleProduct";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
   const router = createBrowserRouter(
@@ -30,6 +31,7 @@ function App() {
           <Route path="*" element={<ErrorPage />}></Route>
           <Route path="/shop" element={<Shop />}></Route>
           <Route path="/cart" element={<CartPage />}></Route>
+          <Route path="/checkout" element={<Checkout />}></Route>
           <Route
             path="/shop/singleProduct/*"
             element={<SingleProduct />}

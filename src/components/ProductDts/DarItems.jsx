@@ -1,4 +1,5 @@
 import React from "react";
+import Disply from "./Disply";
 const DarItems = () => {
   return (
     <section className="pt-12 border-t">
@@ -28,6 +29,10 @@ const DarItems = () => {
                 guitar-influenced leather strap enables easy and stylish travel.
               </span>
             </div>
+          </div>
+          <div className="flex justify-between pb-16">
+            <Disply />
+            <Disply />
           </div>
         </div>
       </div>

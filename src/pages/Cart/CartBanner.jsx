@@ -9,6 +9,7 @@ const CartBanner = () => {
         <h2 className="font-primary font-medium text-5xl">Cart</h2>
       </div>
       <BreadcrumbPage />
+      
     </section>
   );
 };
