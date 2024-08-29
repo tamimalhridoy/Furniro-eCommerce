@@ -16,7 +16,7 @@ const Checkfrom = () => {
             <Input title="Last Name" />
           </div>
           <Input title="Company Name (Optional)" />
-          <Inputsecet />
+          
         </div>
       </div>
     </section>
