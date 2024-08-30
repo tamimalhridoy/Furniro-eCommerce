@@ -1,6 +1,6 @@
 import React from "react";
 import Input from "../../components/unilist/Input";
-import Inputsecet from "../../components/unilist/Inputsecet";
+import Selectbox from "../../components/unilist/Selectbox";
 
 const Checkfrom = () => {
   return (
@@ -16,7 +16,11 @@ const Checkfrom = () => {
             <Input title="Last Name" />
           </div>
           <Input title="Company Name (Optional)" />
-          
+          <Selectbox title="Country / Region" />
+          <Input title="Street address" />
+          <Input title="Town / City" />
+          <Selectbox title="Province" />
+          <Input title="ZIP code" type="number" />
         </div>
       </div>
     </section>
