@@ -21,6 +21,9 @@ const Checkfrom = () => {
           <Input title="Town / City" />
           <Selectbox title="Province" />
           <Input title="ZIP code" type="number" />
+          <Input title="Phone" type="number" />
+          <Input title="Email" />
+          <Input  type="number" />
         </div>
       </div>
     </section>
