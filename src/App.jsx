@@ -12,7 +12,7 @@ import Like from "./pages/addToCart/Like";
 import Share from "./pages/addToCart/Share";
 import Compare from "./pages/addToCart/Compare";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Contact from "./components/Contact/Contact";
 import Payment from "./pages/Payment";
 import Returns from "./pages/Returns";
 import Policies from "./pages/Policies";

@@ -1,10 +1,12 @@
 import React from "react";
 import Input from "../../components/unilist/Input";
 import Selectbox from "../../components/unilist/Selectbox";
+import { Link } from "react-router-dom";
+import ShopInfo from "../../components/shop/ShopInfo";
 
 const Checkfrom = () => {
   return (
-    <section className="pt-24 pb-32">
+    <section className="pt-24">
       <div className="container">
         <h2 className="font-semibold font-primary text-4xl">Billing details</h2>
         <div className="flex justify-between">
@@ -65,8 +67,25 @@ const Checkfrom = () => {
                 Cash On Delivery
               </label>
             </div>
+            <p className="font-primary text-base mt-6">
+              Your personal data will be used to support your experience
+              throughout this website, to manage access to your account, and for
+              other purposes described in our{" "}
+              <Link to="/policies" className="font-semibold">
+                privacy policy
+              </Link>
+              .
+            </p>
+            <div className="mt-10 flex justify-center">
+              <Link className="px-[100px] py-4 border-2 border-black rounded-lg text-xl font-primary ">
+                Place order
+              </Link>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="pt-32">
+        <ShopInfo />
       </div>
     </section>
   );
