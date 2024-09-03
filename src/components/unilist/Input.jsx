@@ -3,7 +3,7 @@ import React from "react";
 const Input = ({ title, type = "text" }) => {
   return (
     <div className="pt-9">
-      <label className="font-primary font-medium text-base block pb-5">
+      <label className="font-primary font-medium text-base pb-5 inline-block">
         {title}
       </label>
       <input
