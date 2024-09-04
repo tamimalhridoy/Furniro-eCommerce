@@ -3,6 +3,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";
 import Input from "../unilist/Input";
+import { Link } from "react-router-dom";
 
 const ContactTouch = () => {
   return (
@@ -56,7 +57,9 @@ const ContactTouch = () => {
               <Input title="Your name" placeholder="fdg" />
               <Input title="Your name" placeholder="fdg" />
               <Input title="Message" placeholder="fdg" />
+              <Link></Link>
             </div>
+          
           </div>
         </div>
       </div>
