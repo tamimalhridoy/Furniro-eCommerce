@@ -4,6 +4,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";
 import Input from "../unilist/Input";
 import { Link } from "react-router-dom";
+import Button from "../Button";
+import ShopInfo from "../../components/shop/ShopInfo";
 
 const ContactTouch = () => {
   return (
@@ -53,16 +55,20 @@ const ContactTouch = () => {
               </ul>
             </div>
             <div className="w-2/5">
-              <Input title="Your name" placeholder="fdg" />
-              <Input title="Your name" placeholder="fdg" />
-              <Input title="Your name" placeholder="fdg" />
-              <Input title="Message" placeholder="fdg" />
-              <Link></Link>
+              <div>
+                <Input title="Your name" placeholder="fdg" />
+                <Input title="Your name" placeholder="fdg" />
+                <Input title="Your name" placeholder="fdg" />
+                <Input title="Message" placeholder="fdg" />
+              </div>
+              <div className="mt-14">
+                <Button title="Submit" />
+              </div>
             </div>
-          
           </div>
         </div>
       </div>
+      <ShopInfo/>
     </section>
   );
 };
