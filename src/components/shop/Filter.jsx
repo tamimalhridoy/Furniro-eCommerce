@@ -7,8 +7,8 @@ const Filter = () => {
   return (
     <section className="py-10 bg-[#F9F1E7]">
       <div className="container">
-        <div className=" flex items-center justify-between">
-          <p className="font-primary text-xl flex items-center gap-3">
+        <div className="flex items-center justify-between">
+          <p className="font-primary text-xl flex items-center gap-3 ">
             <HiAdjustmentsHorizontal />
             <span>Filter</span>
             <p className="flex items-center gap-3 pr-8">
