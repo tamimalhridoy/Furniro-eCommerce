@@ -1,7 +1,12 @@
 import React from "react";
+import Blogbanner from "../components/Blog/Blogbanner";
+import Blogsite from "../components/unilist/Blogsite";
 
 const About = () => {
-  return <div>About Page</div>;
+  return <>
+    <Blogbanner/>
+    <Blogsite/>
+  </>;
 };
 
 export default About;
