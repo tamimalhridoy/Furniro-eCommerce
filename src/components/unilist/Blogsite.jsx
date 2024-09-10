@@ -2,12 +2,13 @@ import React from "react";
 import { IoPerson } from "react-icons/io5";
 import { CgCalendarDates } from "react-icons/cg";
 import { FaTag } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Blogsite = () => {
   return (
     <section>
       <div className="container">
-        <div className="w-3/4 pt-24">
+        <div className="w-3/4 pt-24 pb-7">
           <div className="w-[817px] h-[500px]">
             <img
               src="/blogsite.png"
@@ -43,10 +44,9 @@ const Blogsite = () => {
             cras tincidunt. Pharetra et ultrices neque ornare aenean euismod
             elementum.
           </p>
-          <button>
-
-            
-          </button>
+          <Link className="font-primary font-normal text-base border-b pb-2 border-black">
+            Read more
+          </Link>
         </div>
       </div>
     </section>

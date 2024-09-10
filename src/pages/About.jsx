@@ -6,6 +6,8 @@ const About = () => {
   return <>
     <Blogbanner/>
     <Blogsite/>
+    <Blogsite/>
+    <Blogsite/>
   </>;
 };
 
