@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Blogsite = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container flex">
         <div className="w-3/4 pt-24 pb-7">
           <div className="w-[817px] h-[500px]">
             <img
@@ -47,6 +47,9 @@ const Blogsite = () => {
           <Link className="font-primary font-normal text-base border-b pb-2 border-black">
             Read more
           </Link>
+        </div>
+        <div className="w-1/4 pt-24">
+          <input type="text" placeholder="degfuiedghfiujdbhfjigb" />
         </div>
       </div>
     </section>
