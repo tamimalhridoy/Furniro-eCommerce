@@ -3,6 +3,7 @@ import { IoPerson } from "react-icons/io5";
 import { CgCalendarDates } from "react-icons/cg";
 import { FaTag } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { CiSearch } from "react-icons/ci";
 
 const Blogsite = () => {
   return (
@@ -49,19 +50,19 @@ const Blogsite = () => {
           </Link>
         </div>
         <div className="w-1/4 pt-24">
-          <div class="w-60 h-12 relative flex rounded-xl">
+          <div class="relative flex items-center">
             <input
-              required=""
-              class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-              id="address"
-              type="text"
+              placeholder="Search..."
+              className="input shadow-lg focus:border-2 border-gray-300 px-5 py-3 rounded-xl w-56 transition-all focus:w-64 outline-none"
+              name="search"
+              type="search"
             />
-            <label
-              className="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-              for="address"
-            >
-              Email Address
-            </label>
+            <div className="absolute right-[35%]">
+              <CiSearch />
+              <CiSearch />
+              <CiSearch />
+              <CiSearch />
+            </div>
           </div>
         </div>
       </div>
