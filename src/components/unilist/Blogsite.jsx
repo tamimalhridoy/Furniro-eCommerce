@@ -3,7 +3,6 @@ import { IoPerson } from "react-icons/io5";
 import { CgCalendarDates } from "react-icons/cg";
 import { FaTag } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { CiSearch } from "react-icons/ci";
 
 const Blogsite = () => {
   return (
@@ -53,16 +52,10 @@ const Blogsite = () => {
           <div class="relative flex items-center">
             <input
               placeholder="Search..."
-              className="input shadow-lg focus:border-2 border-gray-300 px-5 py-3 rounded-xl w-56 transition-all focus:w-64 outline-none"
+              className="input shadow-lg border-2 border-gray-300 px-5 py-3 rounded-xl w-full transition-all outline-none"
               name="search"
               type="search"
             />
-            <div className="absolute right-[35%]">
-              <CiSearch />
-              <CiSearch />
-              <CiSearch />
-              <CiSearch />
-            </div>
           </div>
         </div>
       </div>
