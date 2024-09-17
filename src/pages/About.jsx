@@ -8,6 +8,11 @@ const About = () => {
     <Blogsite/>
     <Blogsite/>
     <Blogsite/>
+    {/* kkfdfkd */}
+    <Blogbanner/>
+    <Blogsite/>
+    <Blogsite/>
+    <Blogsite/>
   </>;
 };
 
