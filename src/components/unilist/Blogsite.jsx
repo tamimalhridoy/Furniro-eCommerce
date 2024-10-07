@@ -9,7 +9,7 @@ const Blogsite = () => {
     <section>
       <div className="container flex">
         <div className="w-3/4 pt-24 pb-7">
-          <div className="w-[817px] h-[500px]">
+          <div className="sm:w-[840px] sm:pl-4 h-[500px]">
             <img
               src="/blogsite.png"
               className="w-full rounded-lg"
@@ -17,7 +17,7 @@ const Blogsite = () => {
             />
           </div>
           <div className="flex gap-9 py-4">
-            <div className="text-[#9F9F9F] flex items-center gap-2 font-primary text-base">
+            <div className="text-[#9F9F9F] flex items-center gap-2 font-primary text-base sm:pl-4">
               <IoPerson />
               <p>Admin</p>
             </div>
